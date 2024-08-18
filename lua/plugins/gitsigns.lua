@@ -22,8 +22,5 @@ return {
         end,
       })
     end,
-    opts = function()
-      return require("plugins.configs.others").gitsigns
-    end,
   }
 }

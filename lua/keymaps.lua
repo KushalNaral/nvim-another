@@ -79,3 +79,5 @@ map(
 	{ desc = "Search on current file", noremap = true }
 )
 
+map("n", "zF", "<cmd>foldopen<CR>", { desc = "Open fold", noremap = true })
+map("n", "zC", "<cmd>foldclose<CR>", { desc = "Close fold", noremap = true })

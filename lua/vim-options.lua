@@ -50,8 +50,8 @@ vim.opt.cursorline = true
 vim.opt.timeoutlen = 300
 vim.opt.updatetime = 300
 vim.opt.signcolumn = "yes"
-vim.opt.splitright = true
-vim.opt.splitbelow = true
+-- vim.opt.splitright = true
+-- vim.opt.splitbelow = true
 vim.opt.mouse = "a"
 vim.opt.swapfile = false
 vim.opt.backup = false
@@ -88,3 +88,10 @@ vim.cmd("au TermOpen * setlocal nonumber norelativenumber")
 vim.cmd("au BufWritePre * lua vim.lsp.buf.format()")
 
 vim.opt.background = "dark" -- set this to dark or light
+
+-- for folding features
+vim.o.foldcolumn = "1"
+vim.o.foldlevel = 99
+vim.o.foldlevelstart = 99
+vim.o.foldenable = true
+

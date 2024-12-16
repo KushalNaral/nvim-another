@@ -4,7 +4,7 @@ return {
 	config = function()
 		require("lualine").setup({
 			options = {
-				theme = "rose-pine",
+				theme = "gruvbox-material",
 			},
 			sections = {
 				lualine_c = { { "filename", file_status = true, path = 1 } },

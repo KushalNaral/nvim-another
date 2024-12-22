@@ -138,11 +138,7 @@ for _, ls in ipairs(language_servers) do
 end
 require("ufo").setup({
 	open_fold_hl_timeout = 150,
-	close_fold_kinds_for_ft = {
-		default = { "imports", "comment" },
-		json = { "array" },
-		c = { "comment", "region" },
-	},
+	close_fold_kinds_for_ft = {},
 	preview = {
 		win_config = {
 			border = { "", "─", "", "", "", "─", "", "" },

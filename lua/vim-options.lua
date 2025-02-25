@@ -58,7 +58,7 @@ vim.opt.backup = false
 vim.opt.undodir = vim.fn.getenv("HOME") .. "/.vimdid"
 vim.opt.undofile = true
 vim.opt.scrolloff = 999
-vim.opt.laststatus = 2
+vim.opt.laststatus = 3
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 vim.opt.gdefault = true
@@ -75,7 +75,7 @@ vim.o.foldlevel = 1000
 vim.o.foldexpr = "nvim_treesitter#foldexpr()"
 
 if vim.fn.has("macunix") then
-	vim.opt.clipboard:append({ "unnamedplus" })
+    vim.opt.clipboard:append({ "unnamedplus" })
 end
 
 -- au TextYankPost * silent! lua vim.highlight.on_yank()
@@ -94,4 +94,3 @@ vim.o.foldcolumn = "1"
 vim.o.foldlevel = 99
 vim.o.foldlevelstart = 99
 vim.o.foldenable = true
-

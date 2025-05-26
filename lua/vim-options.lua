@@ -75,7 +75,7 @@ vim.o.foldlevel = 1000
 vim.o.foldexpr = "nvim_treesitter#foldexpr()"
 
 if vim.fn.has("macunix") then
-    vim.opt.clipboard:append({ "unnamedplus" })
+	vim.opt.clipboard:append({ "unnamedplus" })
 end
 
 -- au TextYankPost * silent! lua vim.highlight.on_yank()
@@ -94,3 +94,4 @@ vim.o.foldcolumn = "1"
 vim.o.foldlevel = 99
 vim.o.foldlevelstart = 99
 vim.o.foldenable = true
+

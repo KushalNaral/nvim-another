@@ -118,7 +118,8 @@ require("rose-pine").setup({
 -- vim.cmd("colorscheme rose-pine-moon")
 -- vim.cmd("colorscheme rose-pine-dawn")
 -- vim.cmd("colorscheme kanso")
-vim.cmd("colorscheme kanso-pearl")
+-- vim.cmd("colorscheme kanso-pearl")
+vim.cmd("colorscheme rose-pine-moon")
 
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities.textDocument.foldingRange = {
@@ -253,4 +254,21 @@ vim.diagnostic.config({
 	},
 	underline = true,
 	update_in_insert = false,
+})
+
+vim.opt.termguicolors = true -- Enable true color support
+vim.opt.number = true -- Show line numbers
+vim.opt.relativenumber = true -- Relative line numbers for easy navigation
+vim.opt.cursorline = true -- Highlight current line
+vim.opt.signcolumn = "yes" -- Always show sign column for diagnostics
+vim.opt.scrolloff = 8 -- Keep 8 lines above/below cursor
+vim.opt.wrap = false -- Disable line wrapping
+vim.opt.showmode = false -- Hide mode (handled by statusline plugins)
+
+require("lualine").setup({
+	options = {
+		theme = "rose-pine",
+		section_separators = { left = "", right = "" },
+		component_separators = { left = "", right = "" },
+	},
 })
